@@ -1,23 +1,4 @@
-<svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="materialBlue" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#4285f4;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1976d2;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  
-  <!-- Simple Material Design square icon -->
-  <rect x="20" y="20" width="60" height="60" rx="8" fill="url(#materialBlue)"/>
-  
-  <!-- Lightning bolt for "Fast" -->
-  <path d="M 50 30 L 42 50 L 48 50 L 44 70 L 58 48 L 52 48 L 56 30 Z" 
-        fill="white"/>
-  
-  <!-- Text -->
-  <text x="100" y="62" font-family="'Roboto', 'Inter', system-ui, sans-serif" font-size="48" font-weight="700" fill="#1a237e">
-    FastMDUI
-  </text>
-</svg>
+<img src="./fastmdui_logo.png" alt="FastMDUI Logo" width="100">
 
 # FastMDUI
 
