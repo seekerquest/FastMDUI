@@ -1,4 +1,4 @@
-<img src="./fastmdui_logo.png" alt="FastMDUI Logo" width="100">
+<img src="./fastmdui_logo.png" alt="FastMDUI Logo" width="500">
 
 # FastMDUI
 
