@@ -1,80 +1,22 @@
-<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="materialGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="materialBlue" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#4285f4;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0d47a1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976d2;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#ff6f00;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f44336;stop-opacity:1" />
-    </linearGradient>
-    
-    <!-- Material Design elevation shadow -->
-    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
-      <feOffset dx="0" dy="2" result="offsetblur"/>
-      <feComponentTransfer>
-        <feFuncA type="linear" slope="0.3"/>
-      </feComponentTransfer>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
   
-  <!-- Material Design layered cards representing components -->
-  <g transform="translate(15, 25)">
-    <!-- Back card (depth) -->
-    <rect x="8" y="8" width="50" height="50" rx="4" fill="#90caf9" opacity="0.4"/>
-    
-    <!-- Middle card -->
-    <rect x="4" y="4" width="50" height="50" rx="4" fill="#64b5f6" opacity="0.6" filter="url(#shadow)"/>
-    
-    <!-- Front card with Material ripple effect -->
-    <rect x="0" y="0" width="50" height="50" rx="4" fill="url(#materialGradient)" filter="url(#shadow)"/>
-    
-    <!-- Material Design icon - layers/components symbol -->
-    <g transform="translate(25, 25)">
-      <path d="M 0 -12 L 8 -8 L 8 0 L 0 -4 L -8 0 L -8 -8 Z" fill="white" opacity="0.9"/>
-      <path d="M 0 -6 L 8 -2 L 8 6 L 0 2 L -8 6 L -8 -2 Z" fill="white" opacity="0.7"/>
-      <path d="M 0 0 L 8 4 L 8 12 L 0 8 L -8 12 L -8 4 Z" fill="white" opacity="0.5"/>
-    </g>
-  </g>
+  <!-- Simple Material Design square icon -->
+  <rect x="20" y="20" width="60" height="60" rx="8" fill="url(#materialBlue)"/>
   
-  <!-- Lightning bolt for Fast -->
-  <g transform="translate(68, 18)">
-    <path d="M 6 0 L 0 10 L 4 10 L 2 18 L 10 7 L 6 7 L 8 0 Z" 
-          fill="url(#accentGradient)"/>
-  </g>
+  <!-- Lightning bolt for "Fast" -->
+  <path d="M 50 30 L 42 50 L 48 50 L 44 70 L 58 48 L 52 48 L 56 30 Z" 
+        fill="white"/>
   
   <!-- Text -->
-  <text x="95" y="55" font-family="'Roboto', 'Inter', sans-serif" font-size="42" font-weight="700" fill="#1a237e">
-    Fast
+  <text x="100" y="62" font-family="'Roboto', 'Inter', system-ui, sans-serif" font-size="48" font-weight="700" fill="#1a237e">
+    FastMDUI
   </text>
-  <text x="195" y="55" font-family="'Roboto', 'Inter', sans-serif" font-size="42" font-weight="700" fill="url(#materialGradient)">
-    MD
-  </text>
-  <text x="272" y="55" font-family="'Roboto', 'Inter', sans-serif" font-size="42" font-weight="400" fill="#546e7a">
-    UI
-  </text>
-  
-  <!-- HTML tag accent -->
-  <g transform="translate(95, 65)">
-    <text font-family="'Roboto Mono', monospace" font-size="11" fill="#ff6f00" opacity="0.8">
-      &lt;/&gt;
-    </text>
-  </g>
-  
-  <!-- Tagline -->
-  <text x="120" y="78" font-family="'Roboto', sans-serif" font-size="11" font-weight="500" fill="#78909c" letter-spacing="1.5">
-    MATERIAL COMPONENTS FOR FASTHTML
-  </text>
-  
-  <!-- Material Design accent line with dot -->
-  <line x1="95" y1="88" x2="320" y2="88" stroke="url(#materialGradient)" stroke-width="2" opacity="0.4"/>
-  <circle cx="95" cy="88" r="2.5" fill="#4285f4"/>
-  <circle cx="320" cy="88" r="2.5" fill="#0d47a1"/>
 </svg>
 
 # FastMDUI
