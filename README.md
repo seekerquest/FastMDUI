@@ -356,4 +356,4 @@ List(
 
 ## License
 
-MIT License
+[MIT License](https://github.com/seekerquest/FastMDUI/blob/master/LICENSE)
