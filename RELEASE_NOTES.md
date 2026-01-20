@@ -57,7 +57,7 @@ serve()
 
 ## 📚 Documentation
 
-- **GitHub Repository**: https://github.com/yourusername/fastmdui
+- **GitHub Repository**: https://github.com/seekerquest/fastmdui
 - **PyPI Package**: https://pypi.org/project/fastmdui/
 - **Examples**: See `/examples` directory for demos
 
