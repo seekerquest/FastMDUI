@@ -10,8 +10,8 @@ Material Design UI components for FastHTML projects with full Material Icons sup
 [![License](https://img.shields.io/pypi/l/fastmdui.svg)](https://opensource.org/licenses/MIT)
 
 <!-- Downloads -->
-[![Downloads](https://static.pepy.tech/badge/fastmdui)](https://pepy.tech/project/fastmdui)
-[![Downloads/Month](https://static.pepy.tech/badge/fastmdui/month)](https://pepy.tech/project/fastmdui)
+[![Github All Releases](https://img.shields.io/github/downloads/seekerquest/fastmdui/total.svg)]()
+
 
 <!-- GitHub Stats -->
 [![GitHub stars](https://img.shields.io/github/stars/seekerquest/FastMDUI?style=social)](https://github.com/seekerquest/fastmdui/stargazers)
