@@ -6,6 +6,7 @@ from fastmdui import (
     TopAppBarTitle,NavigationBarItem, NavigationRail, NavigationRailItem,
     RangeSlider, SegmentedButtonGroup, SegmentedButton, ButtonIcon,
 )
+from fastmdui.components import ListSubheader
 
 # Initialize FastHTML app with MDUI headers and Material Icons
 app = FastHTML(
@@ -31,6 +32,26 @@ def home():
             cls="relative"
         ),
         
+        List(
+            ListSubheader("Subheader"),
+            ListItem(
+                headline="Intro",
+                rounded=True,
+            ),
+            ListItem(
+                headline="Introduction",
+                description="intro"
+            ),
+            ListItem(
+                "Install",
+                non_clickable=True
+            ),
+            ListItem(
+                "Install w/ href",
+                # href="/install",
+                hx_get="/install"
+            )
+        ),
         Div(cls="")(
             # Hero Card
             Card(

@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="fastmdui",
-    version="0.1.0",
+    version="0.1.2",
     author="Lissan Zahid",
     author_email="lissane2013@duck.com",
     description="Material Design UI components for FastHTML",

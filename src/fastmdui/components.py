@@ -328,19 +328,54 @@ def Chip(text="", icon=None, selected=False, **kwargs):
     
     return _mdui_component("mdui-chip", text, **attrs)
 
+def ListSubheader(*items, **kw):
+    """MDUI List Subheader Component"""
+    return _mdui_component("mdui-list-subheader", *items, **kw)
 
 def List(*items, **kwargs):
     """MDUI List component"""
     return _mdui_component("mdui-list", *items, **kwargs)
 
 
-def ListItem(text="", icon=None, **kwargs):
+def ListItem(
+    headline: str = "", 
+    description: str = "", 
+    icon=None,
+    end_icon=None,
+    headline_line: str = "",
+    description_line: str = "",
+    href: str = "",
+    target: str = "",
+    disabled: bool = False,
+    non_clickable: bool = False,
+    rounded: bool = False,
+    **kwargs):
     """MDUI List Item component"""
     attrs = {**kwargs}
     if icon:
         attrs["icon"] = icon
+    if end_icon:
+        attrs["end-icon"] = end_icon
+    if headline:
+        attrs["headline"] = headline
+    if description:
+        attrs["description"] = description
+    if headline_line:
+        attrs["headline-line"] = headline_line
+    if description_line:
+        attrs["description-line"] = description_line
+    if href:
+        attrs["href"] = href
+    if target:
+        attrs["target"] = target
+    if disabled:
+        attrs["disabled"] = disabled
+    if non_clickable:
+        attrs["nonclickable"] = non_clickable
+    if rounded:
+        attrs["rounded"] = rounded
     
-    return _mdui_component("mdui-list-item", text, **attrs)
+    return _mdui_component("mdui-list-item", **attrs)
 
 
 def Divider(vertical=False, **kw):
